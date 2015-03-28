@@ -1,0 +1,16 @@
+{
+  "name": "Week_2",
+  "version": "0.0.0",
+  "authors": [
+    "Vitosh <vitosh.doynov@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ]
+}

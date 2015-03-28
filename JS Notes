@@ -1,0 +1,29 @@
+Setup env
+->copy files (server.js, bowerrc)
+->init stuff:
+--->commands:
+	npm init
+	npm install --save express
+	bower ini
+	npm install jade --save
+
+	npm install prompt
+	npm install semver
+	npm install jsonfile --save
+
+
+
+fyi:(http://expressjs.com/guide/using-template-engines.html)
+dir:
+.bowerrc
+server.js
+package.json
+bower.json
+views/index.jade
+public/css/style.css
+
+--->commands:
+	node server.js
+	nodemonpwd
+
+ctrl+a - ctrl/ - commentALL
