@@ -1,0 +1,20 @@
+{
+  "name": "npm install jave",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  },
+  "homepage": "https://github.com/Vitosh/JavaScriptHackBulgaria",
+  "authors": [
+    "Vitosh <vitosh.doynov@gmail.com>"
+  ]
+}

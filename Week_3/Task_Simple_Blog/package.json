@@ -1,0 +1,15 @@
+{
+  "name": "Task_Simple_Blog",
+  "version": "0.0.0",
+  "description": "ERROR: No README data found!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.12.2"
+  }
+}
