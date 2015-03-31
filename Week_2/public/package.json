@@ -10,6 +10,6 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "express": "~4.12.3",
-    "jsonfile": "~2.0.0"
+    "jsonfile": "^2.0.0"
   }
 }
