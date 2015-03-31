@@ -27,15 +27,3 @@ public/css/style.css
 	nodemonpwd
 
 ctrl+a - ctrl/ - commentALL
-
-
-Week3:
-#lodash - OOP library of JS
-#Angular / React / EmberJS / JQuery
-	{} - object literal, short for new Object()
-	every object has dynamic properties
-
-
-
-
-

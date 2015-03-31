@@ -1,0 +1,16 @@
+{
+  "name": "Week_3",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Vitosh/JavaScriptHB",
+  "authors": [
+    "Vitosh <vitosh.doynov@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
