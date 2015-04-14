@@ -1,0 +1,21 @@
+>>> mkdir Desktop/JS/Week_5/Pro1
+>>> touch server.js
+>>> npm .binit
+>>> npm install --save express
+>>> node server.js
+>>> mkdir public; touch public/index.html
+>>> npm install bower
+>>> npm install semver
+>>> npm install jsonfile --save
+>>> sudo npm install -g bower
+>>> bower install --save jQuery
+
+
+For the script source:
+<script src="../bower_components/jQuery/dist/jquery.min.js"></script>
+
+
+.bowerrc
+{
+  "directory": "public/lib"
+}
