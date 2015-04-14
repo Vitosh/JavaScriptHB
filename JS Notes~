@@ -37,11 +37,7 @@ Week3:
 
 
 
-bower install --save jQuery
+bower install --save fontawesome
 npm update -g bower
 
-cat=>>
-.bowerrc
-{
-  "directory": "public/lib"
-}
+
