@@ -1,0 +1,8 @@
+ul.nav
+  each name in ["Dashboard", "Home","About", "Contact"]
+    if (menu=="Home")
+      li.active
+        a(href="product")= name
+    else
+      li
+        a(href="product")= name
