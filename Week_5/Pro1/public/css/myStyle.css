@@ -1,0 +1,15 @@
+ol {
+    padding: 1%;
+    margin: 1%;
+    list-style-type: lower-greek;
+}
+
+ol li {
+    background-color: green;
+    background-position: 0px center; 
+    padding-left: 2%; 
+}
+
+select{
+    background-color: red;
+}
