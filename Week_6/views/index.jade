@@ -1,1 +1,34 @@
-H1 Test
+doctype html(lang='en')
+head
+    title Bootstrap Example
+    |   
+    meta(charset='utf-8')
+    |   
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    |   
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    |   
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    |   
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+  body
+    .container-fluid
+      h1 My Shop
+      |       
+      |   
+      p Welcome to my online shop.
+      |  
+      |   
+      p
+        | Please, select a category.
+  .container-fluid
+      .row
+        .col-md-4
+          a.thumbnail(href='public/img/p1')
+            p Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.
+            img(src='public/img/p1', alt='Pulpit Rock', style='width:150px;height:150px')
+        .col-md-4
+          a.thumbnail(href='p1.png')
+            p
+              | Moustiers-Sainte-Marie: Considered as one of the "most beautiful villages of France".
+            img(src='p1.png', alt='Moustiers Sainte Marie', style='width:150px;height:150px')
