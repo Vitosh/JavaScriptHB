@@ -1,34 +1,40 @@
-doctype html(lang='en')
-head
-    title Bootstrap Example
-    |   
-    meta(charset='utf-8')
-    |   
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    |   
-    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
-    |   
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
-    |   
-    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
-  body
-    .container-fluid
-      h1 My Shop
-      |       
-      |   
-      p Welcome to my online shop.
-      |  
-      |   
-      p
-        | Please, select a category.
+extends layout
+block content
   .container-fluid
       .row
+        .col-md-12
+          a.thumbnail(href='/img/i1.jpg')
+            p Bulgarian National Bank! The place with all the money in Bulgaria.
+            img(src='/img/i1.jpg', alt='IMAGE ERROR', style='width:100px;height:100px')
         .col-md-4
-          a.thumbnail(href='public/img/p1')
-            p Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.
-            img(src='public/img/p1', alt='Pulpit Rock', style='width:150px;height:150px')
+          a.thumbnail(href='/img/i1.jpg')
+            p St Cathedral Al. Nevski - an outstanding cathedral.
+            img(src='/img/i2.jpg', alt='IMAGE ERROR', style='width:100px;height:100px')
         .col-md-4
-          a.thumbnail(href='p1.png')
-            p
-              | Moustiers-Sainte-Marie: Considered as one of the "most beautiful villages of France".
-            img(src='p1.png', alt='Moustiers Sainte Marie', style='width:150px;height:150px')
+          a.thumbnail(href='/img/i1.jpg')
+            p Saint Sofia church - the second oldest church in the Bulgarian capital Sofia.
+            img(src='/img/i3.jpg', alt='IMAGE ERROR', style='width:100px;height:100px')
+        .col-md-4
+          a.thumbnail(href='/img/i1.jpg')
+            p The Zoo of Sofia - a great place for rest.
+            img(src='/img/i4.jpg', alt='IMAGE ERROR', style='width:100px;height:100px')
+        .col-md-3
+          a.thumbnail(href='/img/p1.jpg')
+            p The Boyana church - a medieval church with great history.
+            img(src='/img/i5.jpg', alt='IMAGE ERROR', style='width:100px;height:100px')
+        .col-md-3
+          a.thumbnail(href='/img/p3.jpg')
+            p The National Theatre "Ivan Vazov" - a place for cultural relax.
+            img(src='/img/i6.jpg', alt='IMAGE ERROR', style='width:100px;height:100px')
+        .col-md-3
+          a.thumbnail(href='/img/p3.jpg')
+            p The Garden of the "Ivan Vazov" theatre - a great place for beers.
+            img(src='/img/i7.jpg', alt='IMAGE ERROR', style='width:100px;height:100px')
+        .col-md-3
+          a.thumbnail(href='/img/p3.jpg')
+            p The Sofia City - a place for business.
+            img(src='/img/i8.jpg', alt='IMAGE ERROR', style='width:100px;height:100px')
+        .col-md-12
+          a.thumbnail(href='/img/p3.jpg')
+            p The Sveti Sedmochislenitsi Church, created at the beginning of the 20. century.
+            img(src='/img/i9.jpg', alt='IMAGE ERROR', style='width:100px;height:100px') 

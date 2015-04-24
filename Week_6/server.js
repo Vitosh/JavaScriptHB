@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express(); 
 var fs = require("fs");
- 
+
+app.use(express.static('public')); 
 app.set('view engine', 'jade');
 
 // routes
@@ -21,7 +22,6 @@ app.get("/:fileName", function(req, res, next){
     } else {
       next();
     }
-
   } else {
     next();
   }
@@ -34,4 +34,4 @@ var server = app.listen(3000, function () {
  
   console.log('Example app listening at http://%s:%s', host, port);
  
-});
+})

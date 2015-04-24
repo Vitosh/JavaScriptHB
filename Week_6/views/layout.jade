@@ -1,0 +1,45 @@
+html
+head
+    title Visit Sofia
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+  body
+    .container-fluid
+      .row
+        .col-md-6
+                h1 Travelling around Sofia   
+                p Welcome to the hobby site for travelling around Sofia. What is interesting to see in the city?
+                p Where are the best places for rest and fun?
+        .col-md-6 
+                img(src='img/panorama.png')
+
+nav.navbar.navbar-default
+  .container-fluid(style='background-color:color:lavenderblush;')
+    ul.nav.navbar-nav.navbar-left
+        li: a(href="/")
+          i.fa.fa-star-o &nbsp;
+          | Home
+    ul.nav.navbar-nav.navbar-left
+        li: a(href="/culture")
+          i.fa.fa-star-o &nbsp;
+          | Cultural Tourism
+    ul.nav.navbar-nav.navbar-left
+        li: a(href="/fun")
+          i.fa.fa-star-o &nbsp;
+          | Having fun around the city
+    ul.nav.navbar-nav.navbar-left
+        li: a(href="/economics")
+          i.fa.fa-star-o &nbsp;
+          | Economics Tourism
+    ul.nav.navbar-nav.navbar-right
+        li: a(href="/about")
+          i.fa.fa-shopping-cart &nbsp;
+          | About Us
+      ul.nav.navbar-nav.navbar-right
+        li: a(href="/contacts")
+          i.fa.fa-shopping-cart &nbsp;
+          | Contact Us
+block content
