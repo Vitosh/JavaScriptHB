@@ -1,0 +1,15 @@
+k8
+single thread
+
+JS is a signle threaded non-blocking asynchronous concurrent.
+
+JS
+- call stack
+- event loop
+- callback queue
+- some other apis
+
+
+V8
+- heap
+- call stack

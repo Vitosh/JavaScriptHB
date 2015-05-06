@@ -5,7 +5,9 @@ $(document).ready(function(){
         var InputText = $('#idInputText');
         TodoApp.addTask(InputText.val());
     });
+
     $('#buttonDisplay').click(function(){
         TodoApp.displayList();
     });
+    
 });
