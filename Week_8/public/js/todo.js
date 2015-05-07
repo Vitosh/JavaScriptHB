@@ -1,82 +1,48 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-    sChosenWord = chooseWord();
-    i = 0;
+  var sChosenWord = chooseWord();
+  var sGuessedWord = Array(sChosenWord.length + 1).join("_");
+  var ulMyList = $('#myList');
+  var InputText = $('#idInputText');
+  var myDiv = $("#myResult");
 
-    $('#buttonAdd').click(function(){
-        var ulMyList = $('#myList')
-        var InputText = $('#idInputText')
-
-        var sGuessedWord = Array(sChosenWord.length+1).join("_");
-        var sLastGuess = InputText.val()
-
-        console.log(sChosenWord);
-        console.log(sGuessedWord);
-        console.log(sLastGuess);
-
-
-        ReadAndPrint(sChosenWord,sGuessedWord,i);
-
-        ulMyList.append($('<li>').append(InputText.val()));
-    });
+  $('#buttonAdd').click(function() {
+    var myResult = document.getElementById("myResult")
+    var sLastGuess = InputText.val();
+    sGuessedWord = ReadAndPrint(sChosenWord, sGuessedWord, sLastGuess);
+    if (sGuessedWord === sChosenWord) {
+      myResult.innerHTML = "CONGRATULATIONS!" + "<p>" + "You have guessed correctly the word " + "<b>" + sChosenWord + "</b>" + " !"
+    } else {
+      myResult.innerHTML = sGuessedWord;
+    };
+  });
 });
 
-var words = ['bird','university'];
+var words = ['bird', 'nani'];
 
-function chooseWord(){
-    return words[Math.floor(Math.random() * words.length)];
-}
-
-function main(){
-
-    sChosenWord = chooseWord();
-    sGuessedWord = Array(sChosenWord.length+1).join("_");
-    i = 0;
-
-    console.log(sGuessedWord);
-    ReadAndPrint(sChosenWord,sGuessedWord,i);
-}
-
-function countOccurrencies(MyStr,MyChar){
-    var count = MyStr.length - MyStr.replace(MyChar,"").length;
-    return count;
-}
-
-function btnClicked(){
-    console.log("CLICKED")
-    // ReadMyLetter()
-}
-
-function ReadMyLetter(){
-    var input = document.getElementById("idName");
-    console.log(input);
-}
-
+function chooseWord() {
+  return words[Math.floor(Math.random() * words.length)];
+};
 
 function ReadAndPrint(sChosenWord, sGuessedWord, sLetter) {
 
-    if (sChosenWord.indexOf(sLetter) > -1) {
-      z = countOccurrencies(sChosenWord, sLetter);
-      iPosition = sChosenWord.indexOf(sLetter);
-      sGuessedWord = sGuessedWord.replaceAt(iPosition, sLetter);
+  var indices = [];
 
+  for (var i = 0; i < sChosenWord.length; i++) {
+    if (sChosenWord[i] === sLetter) {
+      indices.push(i);
 
-      console.log(sGuessedWord);
-
-      if (sChosenWord != sGuessedWord) {
-        continue
-      } else {
-        console.log("Bravo! :)");
-        }
     }
+  }
 
-    else {
-        i++;
-        console.log("So far " + i + " not successful guess! :) Keep on trying! :)");
-        console.log(sGuessedWord);
-      }
-    };
+  for (var z = 0; z < indices.length; z++) {
+    indexToReplace = indices[z];
+    sGuessedWord = sGuessedWord.replaceAt(indexToReplace, sLetter)
+  }
+  return sGuessedWord
+};
 
-String.prototype.replaceAt=function(index, character) {
-    return this.substr(0, index) + character + this.substr(index+character.length);
-}
+
+String.prototype.replaceAt = function(index, character) {
+  return this.substr(0, index) + character + this.substr(index + character.length);
+};
